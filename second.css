@@ -1,0 +1,554 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(./Allimages/girl.pic);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+    width: 100%;
+}
+
+.child_1 {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    background-color: lightgray;
+    top: 0px;
+    z-index: 10px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.right_1,
+.right_2 {
+    display: flex;
+    gap: 30px;
+}
+
+.child_2 {
+    display: flex;
+    gap: 850px;
+
+}
+
+.child_2>.left {
+    padding-top: 200px;
+    padding-left: 200px;
+    color: white;
+}
+
+.child2_right {
+    height: 430px;
+    width: 60px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 80px;
+    position: fixed;
+    right: 20px;
+
+}
+
+.child2_right>a {
+    font-size: 25px;
+    color: gray;
+    padding: 14px;
+}
+
+.child2_right>a:hover {
+    background-color: lightcyan;
+    color: blue;
+
+    p {
+        visibility: visible;
+    }
+
+}
+
+.uparrow {
+    font-size: 30px;
+    background-color: white;
+    border: 2px solid lightgray;
+    height: 50px;
+    border-radius: 100px;
+    width: 60px;
+    padding-left: 11px;
+    top: 650px;
+    right: 20px;
+    position: fixed;
+}
+
+.uparrow:hover {
+    background-color: aqua;
+    color: white;
+}
+
+.appointment {
+    display: flex;
+    margin-top: -50px;
+    justify-content: center;
+
+    .one {
+        width: 450px;
+        background-color: aqua;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    button:hover {
+        background-color: blue;
+        color: black;
+    }
+}
+
+.about {
+    display: flex;
+    gap: 100px;
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.right_3 {
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+    /* Make sure the element is hidden initially */
+}
+
+.div1 .accordion-button::after {
+    order: -1;
+    /* Move the arrow icon to the start */
+    margin-left: 0;
+    /* Remove any default left margin */
+    margin-right: 10px;
+    /* Add space between the icon and text */
+}
+
+.div1 .accordion-flush {
+    width: 600px;
+    padding: -20px;
+}
+
+.div1 .fstbtn {
+    border: 1px solid white;
+}
+
+.div1 .accordion-button {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.div1 .accordion-button:not(.collapsed) {
+    background-color: aqua;
+    color: white;
+}
+
+.help {
+    background-image: url(./Allimages/parent_4umg.jpg);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    height: 1000px;
+    width: 100%;
+}
+
+.help_secound_main {
+    height: 650px;
+    width: 1350px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-left: 70px;
+}
+
+.left_5 {
+    padding-top: 100px;
+    padding-left: 250px;
+}
+
+.doctor {
+    display: flex;
+    gap: 100px;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.left_5 {
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+
+.left_5>span:hover {
+    border: 2px solid lightgreen !important;
+    border-radius: 30px !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+.service {
+    height: 300px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.small-line {
+    border: none;
+    border-top: 2px solid green;
+    width: 50px;
+}
+
+.offers {
+    background-image: url(./Allimages/Layer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getnow1>span:hover {
+    border: 2px solid blueviolet !important;
+    border-radius: 30px !important;
+    background-color: #d4fdfe !important;
+}
+
+.getnow>span:hover {
+    border: 2px solid blue !important;
+    border-radius: 30px !important;
+    background-color: white !important;
+}
+
+.Allergy,
+.Dental {
+    height: 700px;
+    width: 350px;
+    background-color: #d4fdfe;
+}
+
+.rupee {
+    display: flex;
+    padding-left: 70px;
+}
+
+.getnow {
+    margin-left: 80px;
+}
+
+.getnow1 {
+    margin-left: 80px;
+}
+
+.eye {
+    height: 700px;
+    width: 350px;
+    background-color: white;
+}
+
+.questions {
+    display: flex;
+}
+
+.div2 {
+    width: 600px;
+}
+
+.div2 .accordion-button:not(.collapsed) {
+    background-color: lightgray;
+    color: white;
+}
+
+.left_8,
+.right_8 {
+    padding-top: 120px;
+    padding-left: 250px;
+}
+
+.left_8>span:hover {
+    border: 2px solid lightgreen !important;
+    border-radius: 30px !important;
+    background-color: white !important;
+}
+
+.Referance {
+    height: 200px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+.location,
+.Adress,
+.email,
+.telephone {
+    display: flex;
+    gap: 30px
+}
+
+.makeappointmnet {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    gap: 100px
+}
+
+.makeappointmnet_left {
+    display: flex;
+    gap: 20px
+}
+
+.makeappointmnet_left_1 {
+
+    background-image: url(./Allimages/parent10img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 630px;
+    width: 400px;
+
+    img {
+        padding-top: 200px;
+        padding-left: 100px;
+    }
+}
+
+.makeappointmnet_left_2 {
+    background-image: url(./Allimages/parent10img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 630px;
+    width: 400px;
+
+    img {
+        padding-top: 200px;
+        padding-left: 100px;
+    }
+}
+
+.girl {
+    padding-top: 150px;
+    padding-left: 90px;
+}
+
+.name {
+    padding-top: 10px;
+    padding-left: 100px;
+    color: white;
+}
+
+.point992 {
+    display: flex;
+    color: white;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div3 {
+    select {
+        width: 330px;
+        border: none;
+    }
+}
+
+.makeappointmnet_right_1 {
+    input:focus {
+        border: none;
+    }
+}
+
+.formshr {
+    border: none;
+    border-top: 1px solid lightgray;
+    width: 350px;
+}
+
+.parent_10_right_booknow {
+    background-color: aqua;
+    height: 20px;
+    width: 70px;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.parent_10_right_booknow:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid lightseagreen;
+}
+
+.footer {
+    height: 350px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer_middle_1,
+.footer_middle_2 {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_middle_1 {
+    img:hover {
+        display: none;
+        color: white;
+        content: url(./Allimages/link.jpg);
+    }
+}
+
+.footer_middle_1 {
+    display: flex;
+}
+
+.div5 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.5);
+    /* Aqua color with transparency */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for the overlay */
+    border-radius: 50%;
+    /* Rounded corners for the overlay */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the image */
+    width: 80%;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Rounded corners for the overlay image */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for the overlay */
+}
+
+.div5:hover .overlay {
+    opacity: 1;
+    /* Show the aqua overlay on hover */
+}
+
+.div5:hover .overlay-image {
+    opacity: 1;
+    /* Show the badham image on hover */
+}
+
+.zero {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    left: 805px;
+    border: 2 solid;
+    background-color: aqua;
+    border-radius: 100px;
+    width: 20px;
+    padding-top: 0.5px;
+    padding-left: 4px;
+    height: 25px;
+}
+
+.ph3>a:hover {
+    color: blue;
+}
+
+.ph3>a {
+    color: white;
+    font-size: 15px;
+}
+
+.horizental {
+    border: none;
+    border-top: 1px solid gray;
+    width: 290px;
+}
+
+.footer_right {
+    color: gray;
+}
+
+.footer_last {
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
